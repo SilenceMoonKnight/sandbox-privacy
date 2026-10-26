@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="积木游乐场隐私政策：了解游戏的信息处理、本地存储、设备权限、TapPlay 服务和隐私联系渠道。">
+  <meta name="theme-color" content="#203a48">
+  <meta name="referrer" content="no-referrer">
+  <title>隐私政策 · 积木游乐场</title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    :root { color-scheme: light; --ink: #203a48; --muted: #526970; --line: #dce5df; --green: #295f51; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: #f3f5ef; color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 16px; line-height: 1.9; }
+    a { color: var(--green); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:hover { color: #153d32; }
+    a:focus-visible { outline: 3px solid #c18b2e; outline-offset: 5px; border-radius: 2px; }
+    .skip { position: absolute; left: 20px; top: -80px; padding: 10px 18px; background: white; z-index: 2; }
+    .skip:focus { top: 12px; }
+    .wrap { width: min(100% - 40px, 900px); margin-inline: auto; }
+    header { background: var(--ink); color: #fff0c9; border-bottom: 6px solid #a8cdb7; }
+    .hero { padding-block: 44px 42px; }
+    .brand { display: flex; align-items: center; gap: 14px; font-size: 18px; font-weight: 650; letter-spacing: .04em; }
+    .brand img { width: 52px; height: 52px; border-radius: 8px; }
+    h1 { margin: 28px 0 10px; font-size: clamp(32px, 6vw, 48px); letter-spacing: .04em; line-height: 1.3; }
+    .dates { color: #c6d9cf; margin: 0; font-size: 14px; }
+    main { margin-block: 28px 40px; background: #fffefa; padding: 34px 44px; border: 1px solid var(--line); border-radius: 12px; }
+    .intro { margin-top: 0; }
+    .identity { margin: 24px 0; padding: 18px 22px; border-left: 4px solid #78a58c; background: #eef4ed; }
+    .identity p { margin: 3px 0; }
+    nav { border-block: 1px solid var(--line); padding: 20px 0; margin: 28px 0; }
+    nav ol { columns: 2; column-gap: 40px; margin: 0; padding-left: 1.5em; }
+    nav li { break-inside: avoid; padding-block: 3px; }
+    section { margin-top: 34px; }
+    h2 { font-size: 22px; line-height: 1.5; margin: 0 0 14px; }
+    h3 { font-size: 17px; margin: 22px 0 8px; }
+    p { margin: 12px 0; }
+    ul { padding-left: 1.4em; }
+    li { margin-block: 8px; }
+    strong { font-weight: 650; }
+    .note { color: var(--muted); font-size: 15px; }
+    .contact { background: #eef4ed; border: 1px solid var(--line); border-radius: 8px; padding: 20px 24px; }
+    footer { padding: 0 0 32px; text-align: center; color: var(--muted); font-size: 14px; }
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 28px, 900px); }
+      .hero { padding-block: 30px; }
+      main { padding: 26px 20px; margin-top: 18px; }
+      nav ol { columns: 1; }
+      h2 { font-size: 20px; }
+      .identity, .contact { padding: 16px; }
+    }
+    @media print {
+      body, header, main { background: white; color: black; }
+      header { border-bottom: 1px solid #aaa; }
+      .dates { color: #333; }
+      .wrap { width: 100%; }
+      .hero, main { padding: 16px 0; }
+      main { border: 0; }
+      nav, .skip, footer { display: none; }
+      h2, h3 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#policy">跳转到隐私政策正文</a>
+  <header>
+    <div class="wrap hero">
+      <div class="brand"><img src="icon.png" width="52" height="52" alt="积木游乐场图标"><span>积木游乐场</span></div>
+      <h1>隐私政策</h1>
+      <p class="dates">更新日期：<time datetime="2026-10-26">2026 年 10 月 26 日</time>　·　生效日期：<time datetime="2026-10-26">2026 年 10 月 26 日</time></p>
+    </div>
+  </header>
+  <main id="policy" class="wrap">
+    <p class="intro">欢迎使用《积木游乐场》。我们重视您的个人信息与隐私保护。本政策说明您使用游戏及联系我们时，相关信息的处理方式，以及您可以行使的权利。请在使用前阅读本政策；如有疑问，请通过文末邮箱联系我们。</p>
+    <div class="identity">
+      <p><strong>应用名称：</strong>积木游乐场</p>
+      <p><strong>开发者：</strong>沙盒开发者（以下简称“我们”）</p>
+      <p><strong>Android 包名：</strong>com.sandbox.creation</p>
+      <p><strong>隐私联系邮箱：</strong><a href="mailto:sandboxdev@163.com">sandboxdev@163.com</a></p>
+    </div>
+    <nav aria-label="政策目录">
+      <ol>
+        <li><a href="#scope">适用范围</a></li>
+        <li><a href="#information">我们如何处理信息</a></li>
+        <li><a href="#permissions">设备权限与本地存储</a></li>
+        <li><a href="#services">游戏引擎与第三方服务</a></li>
+        <li><a href="#sharing">共享、转让与公开披露</a></li>
+        <li><a href="#retention">保存与安全保护</a></li>
+        <li><a href="#rights">您的权利</a></li>
+        <li><a href="#children">未成年人保护</a></li>
+        <li><a href="#changes">政策更新</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ol>
+    </nav>
+    <section id="scope">
+      <h2>一、适用范围</h2>
+      <p>本政策适用于我们提供的《积木游乐场》Android 游戏本体，以及与该游戏有关的隐私咨询和问题反馈。当前游戏为本地物理沙盒游戏，不要求注册开发者自有账号。</p>
+      <p>您通过 TapTap 下载游戏，或通过 TapPlay 使用游戏时，平台提供的账号、实名认证、防沉迷、分发和运行服务，另受平台向您展示的协议与隐私政策约束。本政策不替代第三方平台对其自身信息处理活动的说明。</p>
+    </section>
+    <section id="information">
+      <h2>二、我们如何处理信息</h2>
+      <h3>1. 本地游戏与偏好设置</h3>
+      <p>游戏会在设备上的应用存储空间保存音量、静音状态和所选地图，用于在下次启动时恢复您的偏好。游戏运行中的人物、道具、物理状态和操作输入用于即时呈现玩法。当前游戏业务代码不将这些信息上传至开发者服务器。</p>
+      <h3>2. 您主动提供的反馈</h3>
+      <p>当您通过邮件联系我们时，我们会处理您主动提供的邮件地址、邮件内容，以及您选择附带的设备型号、系统版本、问题描述、截图或日志，用于回复咨询、处理故障或办理个人信息请求。提交截图或日志前，请删除与问题无关的个人信息。请勿发送密码、验证码、身份证照片等不必要的敏感信息。</p>
+      <h3>3. 当前未提供的信息处理功能</h3>
+      <p>当前游戏本体未提供开发者账号注册、广告投放、内购支付或社交通讯功能；未设置读取通讯录、短信、精确位置、麦克风或摄像头信息的业务功能，也不通过游戏业务代码采集 IMEI、IMSI 或广告标识符用于用户画像和营销。</p>
+    </section>
+    <section id="permissions">
+      <h2>三、设备权限与本地存储</h2>
+      <p>当前 Android 游戏本体未声明摄像头、麦克风、定位、通讯录、短信或共享存储读写权限。偏好设置保存在应用自身存储空间，不需要访问您的相册、通讯录或其他应用文件。</p>
+      <p>游戏引擎会使用系统提供的屏幕尺寸、图形能力、触控输入等运行环境信息，以完成画面适配、音频播放和交互。这些运行需求不等同于向开发者上传个人信息。</p>
+      <p>您可以通过系统设置管理应用权限或清除应用数据。清除数据可能重置游戏偏好。使用 TapPlay 时，相关存储清理和权限管理入口以 TapTap 客户端提供的功能为准。</p>
+    </section>
+    <section id="services">
+      <h2>四、游戏引擎与第三方服务</h2>
+      <h3>1. Unity 游戏引擎</h3>
+      <p>游戏使用 Unity 引擎实现画面、音频、输入和物理互动。当前项目配置未启用 Unity Analytics、Unity Ads、Unity Purchasing 或崩溃自动上报服务。使用游戏引擎不表示我们已经开通这些在线服务。</p>
+      <p>Unity 的相关说明：<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 游戏玩家及应用用户隐私政策</a>。</p>
+      <h3>2. TapTap 与 TapPlay</h3>
+      <p>游戏在 TapTap 提供服务，并使用“未接入防沉迷，使用 TapPlay”的平台配置。TapPlay 方式下的实名认证和防沉迷由平台提供；当前游戏本体未集成 TapTap 登录或实名认证 SDK，不在游戏内直接向您索取姓名、身份证号码或人脸信息。</p>
+      <p>您使用 TapTap 或 TapPlay 时，平台可能为账号管理、游戏运行、安全保障和防沉迷处理相应的账号、设备、网络及使用信息。具体处理主体、信息种类、用途、保存期限、授权和权利行使方式，请以平台当时向您展示的说明为准。</p>
+      <p>平台隐私说明：<a href="https://www.taptap.cn/doc/privacy-policy">TapTap 隐私政策</a>。有关平台账号、实名信息和防沉迷记录的请求，请通过平台的隐私或客服入口办理。</p>
+    </section>
+    <section id="sharing">
+      <h2>五、共享、转让与公开披露</h2>
+      <p>我们不出售您的个人信息，不将您提交的隐私咨询内容用于广告营销。除处理您提出的请求所必需、取得您的单独同意，或法律法规规定的情形外，我们不会向其他主体提供、转让或公开披露您的个人信息。</p>
+      <p>如确需委托服务提供方协助处理，我们会限定处理目的和必要范围，要求其采取相应保护措施。发生依法应当告知您的主体变更或其他信息处理变化时，我们会履行相应告知与保护义务。</p>
+    </section>
+    <section id="retention">
+      <h2>六、信息保存与安全保护</h2>
+      <p>游戏本地偏好保存在您的设备或您使用的平台运行环境中，直至被覆盖或清除。我们不为当前游戏本体建立个人信息上传服务器，也不通过游戏业务功能主动向境外传输您的本地游戏数据。</p>
+      <p>您主动发送的联系信息会保存在用于处理咨询的邮箱等必要工作环境中，仅在回复、解决问题和处理相关争议所必需的期间内保存；目的完成且不再需要保留时，我们会删除或匿名化处理，法律法规另有要求的除外。</p>
+      <p>我们会采取与信息处理相适应的访问限制、账号安全和最小必要处理措施。任何系统均无法保证绝对安全；如发生个人信息安全事件，我们将依法采取补救措施，并在需要时通知受影响用户及有关主管部门。</p>
+    </section>
+    <section id="rights">
+      <h2>七、您的权利</h2>
+      <ul>
+        <li><strong>查阅、更正、删除：</strong>您可以联系下方邮箱，请求处理您曾向我们提供的反馈和联系信息。</li>
+        <li><strong>管理本地数据：</strong>您可以在游戏中调整音量等设置，或通过系统、平台提供的入口清除游戏数据。</li>
+        <li><strong>撤回同意、限制处理：</strong>您可以停止提供非必要反馈，或联系我们提出相应请求。撤回不影响撤回前基于有效授权进行的处理。</li>
+        <li><strong>账号注销：</strong>当前游戏本体没有开发者自有账号。TapTap 账号的注销请通过 TapTap 平台办理。</li>
+        <li><strong>咨询和投诉：</strong>对本政策或处理方式有疑问时，您可向我们咨询，也可以依法向有关主管部门投诉。</li>
+      </ul>
+      <p>我们可能要求您提供与请求相匹配的必要信息，以核实请求与您的关联，避免他人冒用。我们会在收到请求后 15 个工作日内回复处理情况；依法不能满足请求的，将说明理由。</p>
+    </section>
+    <section id="children">
+      <h2>八、未成年人保护</h2>
+      <p>未成年人应在监护人的指导下阅读本政策并合理使用游戏。不满十四周岁的未成年人向我们提供个人信息前，应取得监护人的同意。游戏本体不会主动要求儿童提供姓名、身份证号等信息。</p>
+      <p>如监护人发现未成年人未经同意向我们提交了个人信息，可通过联系邮箱要求核实和删除。使用 TapPlay 时，请遵守平台的实名认证、防沉迷和监护人管理要求。</p>
+    </section>
+    <section id="changes">
+      <h2>九、政策更新</h2>
+      <p>当游戏功能或信息处理方式发生变化时，我们会更新本政策及更新日期。涉及处理目的、信息类型、第三方服务或您权利的重大变化时，我们会通过适当方式提示，并在依法需要时重新取得您的同意。未经您的同意，我们不会减损您依法享有的权利。</p>
+    </section>
+    <section id="contact" class="contact">
+      <h2>十、联系我们</h2>
+      <p>开发者：<strong>沙盒开发者</strong><br>隐私联系邮箱：<a href="mailto:sandboxdev@163.com">sandboxdev@163.com</a></p>
+      <p class="note">建议邮件主题注明“积木游乐场 · 隐私请求”，并说明需要处理的事项。请仅提供办理请求所必需的信息。</p>
+    </section>
+  </main>
+  <footer class="wrap">积木游乐场 · 隐私政策</footer>
+</body>
+</html>
